@@ -17,9 +17,10 @@ class LinkedList:
     
     def display(self):
         cur_node = self.head
-        while cur_node.next:
+        while cur_node.next.next:
             cur_node = cur_node.next
-            print(cur_node.data, end = " ")
+            print(cur_node.data, end = "->")
+        print(cur_node.next.data)
         print()
 
     def length(self) -> int:
@@ -53,26 +54,27 @@ class LinkedList:
                 return
             cur_node = cur_node.next
             ind += 1
+    
 
+if __name__ == "__main__":
 
+    myList = LinkedList()
 
-myList = LinkedList()
+    myList.append(10)
+    myList.display()
+    print("Length of linked list", myList.length())
+    myList.append(15)
+    myList.display()
+    print("Length of linked list", myList.length())
+    myList.append(20)
+    myList.append(25)
+    myList.append(30)
+    myList.display()
 
-myList.append(10)
-myList.display()
-print("Length of linked list", myList.length())
-myList.append(15)
-myList.display()
-print("Length of linked list", myList.length())
-myList.append(20)
-myList.append(25)
-myList.append(30)
-myList.display()
+    myList.delete(0)
+    myList.display()
 
-myList.delete(0)
-myList.display()
-
-# implement searcing and deletion using value
+    # implement searcing and deletion using value
 
 
 
