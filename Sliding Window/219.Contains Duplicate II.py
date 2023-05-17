@@ -2,19 +2,26 @@ from typing import List
 
 class Solution:
     def containsNearbyDuplicate(self, nums, k):
-        # create an empty set to store the elements
+        
+        # Create an empty set to store the elements
+        # An alternative approach is to use dictionary to store the {val: ind} pair
         li = set()
-        # loop through the array
+        
+        # Iterate until the length of the array
         for i in range(len(nums)):
-            # if the current element is already in the set, return True
+            
+            # If the current element is already in the set, return True
             if nums[i] in li:
                 return True
-            # otherwise, add the current element to the set
+
+            # Add the current element to the set
             li.add(nums[i])
-            # if the size of the set exceeds k, remove the oldest element
+
+            # Remove the left element if the size of set > k
             if len(li) > k:
                 li.remove(nums[i-k])
-        # if no duplicate is found, return False
+
+        # Return False if there are no duplicates
         return False
 
 
