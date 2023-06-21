@@ -14,5 +14,5 @@ Head over to my <a href = "https://leetcode.com/younus_baig/">LC profile</a> and
 <hr>
 <a href = "https://www.linkedin.com/in/mirzayounusbaig/">Connect with me on LinkedIn</a>
 <br>
-<a href = "https://stackoverflow.com/users/8683891/mirza-younus">My contributions on StackOverflow!
+<a href = "https://stackoverflow.com/users/8683891/mirza-younus">My contributions on StackOverflow!</a>
 <hr>
