@@ -9,3 +9,5 @@ for i in range(len(arr) - 1):
     arr[i], arr[minInd] = arr[minInd], arr[i]
 
 print(arr)
+
+print("Space Complexity: O(n2)")
