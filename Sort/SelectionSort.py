@@ -8,6 +8,8 @@ for i in range(len(arr) - 1):
             minInd = j
     arr[i], arr[minInd] = arr[minInd], arr[i]
 
-print(arr)
+    print("Step {}: {}".format(i, arr) )
 
-print("Space Complexity: O(n2)")
+print("Sorted array: {arr}".format(arr=arr))
+
+print("Time Complexity: O(n2)")
