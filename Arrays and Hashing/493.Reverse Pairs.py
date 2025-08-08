@@ -1,3 +1,4 @@
+from typing import List
 class Solution:
     # declare as a global variable or a class variable
     def __init__(self):
